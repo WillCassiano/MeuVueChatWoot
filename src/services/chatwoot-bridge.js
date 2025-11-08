@@ -7,7 +7,9 @@ export default {
     // envia ready para o parent (Chatwoot)
     try {
       window.parent.postMessage({ event: 'sidebar.ready' }, '*');
-    } catch { }
+    } catch {
+      //ignorado
+    }
 
     window.addEventListener('message', (ev) => {
       if (!ev?.data) return;
@@ -20,7 +22,9 @@ export default {
       try {
         const h = document.documentElement.scrollHeight || document.body.scrollHeight;
         window.parent.postMessage({ event: 'sidebar.resize', height: h }, '*');
-      } catch { }
+      } catch {
+        // ignorado
+      }
     };
 
     // envia altura inicial e a cada 500ms por alguns segundos
