@@ -2,7 +2,7 @@
   <div class="sidebar">
     <header class="header">
       <div>
-        <h3>Integração • Meu Sistema</h3>
+        <h3>Integração • ControleWeb</h3>
         <div class="meta">
           Conversa: <strong>{{ conversationId || '—' }}</strong> • Status:
           {{ conversationStatus || '—' }}

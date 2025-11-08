@@ -6,7 +6,7 @@ export default {
 
     // envia ready para o parent (Chatwoot)
     try {
-      window.parent.postMessage({ event: 'sidebar.ready' }, '*');
+      window.parent.postMessage({ event: 'chatwoot-dashboard-app:fetch-info' }, '*');
     } catch {
       //ignorado
     }
