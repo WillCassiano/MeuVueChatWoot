@@ -61,7 +61,7 @@ onBeforeUnmount(() => {
     </div>
 
     <h4>Logs:</h4>
-    <pre style="height: 200px; overflow: auto; background: #f7f7f7; padding: 8px; font-size: 12px"
+    <pre style="height: 200px; overflow: auto; padding: 8px; font-size: 12px"
       >{{ logs.map((l) => `${l.timestamp} - ${l.msg}`).join('\n') }}
 </pre
     >
